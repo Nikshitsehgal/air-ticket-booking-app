@@ -1,153 +1,171 @@
 /* General Styles for the Login Page */
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f4f7;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .login-container h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Style for the Form */
-  form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px; /* Limit the width of the form */
-    box-sizing: border-box;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-top: 5px;
-  }
-  
-  input:focus {
-    border-color: #2c3e50;
-    outline: none;
-  }
-  
-  /* Error Message */
- /* Error Message */
-.error {
-    color: red;
-    font-size: 0.9em;
-    text-align: left; /* Align error message text to the left for better visibility */
-    margin-top: 10px;
-    display: block; /* Ensure it takes up the full width and starts on a new line */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f7;
+  padding: 20px;
+  position: relative;
+  padding-top: 70px;
 }
-  
-  /* Button Styling */
-  button.login-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button.login-btn:hover {
-    background-color: #2c3e50;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
 
-  /* Success message styling */
+.heading-container {
+  margin-bottom: 100px;
+}
+
+.heading-container h1 {
+  font-size: 50px;
+  color: #2c3e50;
+  border-bottom: 1px dashed #2c3e50;
+  padding-bottom: 5px;
+}
+
+.heading-container h4 {
+  margin: 0;
+  color: #93c1ea;
+}
+
+.login-container h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for the Form */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  box-sizing: border-box;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+input:focus {
+  border-color: #2c3e50;
+  outline: none;
+}
+
+/* Error Message */
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9em;
+  text-align: left; /* Align error message text to the left for better visibility */
+  margin-top: 10px;
+  display: block; /* Ensure it takes up the full width and starts on a new line */
+}
+
+/* Button Styling */
+button.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.login-btn:hover {
+  background-color: #2c3e50;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success message styling */
 .success {
-    position: absolute; /* Position at the top of the login container */
-    top: 20px; /* Space from the top */
-    left: 50%;
-    transform: translateX(-50%); /* Center the message horizontally */
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    z-index: 10; /* Ensure it appears above the form */
-    opacity: 1; /* Start with full visibility */
-    animation: fadeOut 3s forwards; /* Fade out the message after 3 seconds */
+  position: absolute; /* Position at the top of the login container */
+  top: 20px; /* Space from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center the message horizontally */
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10; /* Ensure it appears above the form */
+  opacity: 1; /* Start with full visibility */
+  animation: fadeOut 3s forwards; /* Fade out the message after 3 seconds */
 }
 
 /* Keyframe animation for fading out */
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(-20px); /* Move the message up slightly as it fades */
-    }
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px); /* Move the message up slightly as it fades */
+  }
 }
 
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .login-container {
-      padding: 15px;
-    }
-  
-    .login-container h2 {
-      font-size: 1.8em;
-    }
-  
-    form {
-      padding: 25px;
-      width: 90%;  /* Make the form more fluid for smaller screens */
-    }
-  
-    input, button.login-btn {
-      font-size: 1em; /* Make buttons and input fields more touch-friendly */
-      padding: 10px;
-    }
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
   }
-  
-  @media (max-width: 480px) {
-    .login-container {
-      padding: 10px;
-    }
-  
-    form {
-      width: 100%;  /* Make the form take the full width on very small screens */
-      padding: 20px;
-    }
-  
-    input, button.login-btn {
-      font-size: 0.9em;  /* Adjust font size for better readability */
-      padding: 8px;
-    }
-  
-    .error {
-      font-size: 0.8em;  /* Slightly smaller error message */
-    }
+
+  .login-container h2 {
+    font-size: 1.8em;
   }
-  
+
+  form {
+    padding: 25px;
+    width: 90%; /* Make the form more fluid for smaller screens */
+  }
+
+  input,
+  button.login-btn {
+    font-size: 1em; /* Make buttons and input fields more touch-friendly */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%; /* Make the form take the full width on very small screens */
+    padding: 20px;
+  }
+
+  input,
+  button.login-btn {
+    font-size: 0.9em; /* Adjust font size for better readability */
+    padding: 8px;
+  }
+
+  .error {
+    font-size: 0.8em; /* Slightly smaller error message */
+  }
+}

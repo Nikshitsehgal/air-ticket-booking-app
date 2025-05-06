@@ -52,8 +52,8 @@ const Login = () => {
       setSuccessMessage("Welcome! You are logged in."); // Set success message
       setTimeout(() => {
         setSuccessMessage(""); // Hide success message after 3 seconds
-        navigate("/flights");  // Redirect to dashboard
-      }, 1000);  // Message disappears after 3 seconds
+        navigate("/flights"); // Redirect to dashboard
+      }, 1000); // Message disappears after 3 seconds
     }
   };
 
@@ -63,8 +63,8 @@ const Login = () => {
       setSuccessMessage("Welcome! You are logged in."); // Set success message
       setTimeout(() => {
         setSuccessMessage(""); // Hide success message after 3 seconds
-        navigate("/flights");  // Redirect to dashboard
-      }, 1000);  // Message disappears after 3 seconds
+        navigate("/flights"); // Redirect to dashboard
+      }, 1000); // Message disappears after 3 seconds
     }
   }, [user, navigate]);
 
@@ -80,7 +80,10 @@ const Login = () => {
       <div className="login-container">
         {/* Success Message Displayed at the Top */}
         {successMessage && <div className="success">{successMessage}</div>}
-
+        <div className="heading-container">
+          <h1>Air Ticket Booking</h1>
+          <h4>Book your air tickets now!</h4>
+        </div>
         <form onSubmit={handleLogin}>
           <h2>Login</h2>
           <div className="input-group">
@@ -102,11 +105,8 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-           
           </div>
           {passwordError && <p className="error">{passwordError}</p>}
-
-         
 
           {/* Submit Button */}
           <button type="submit" className="login-btn" disabled={loading}>

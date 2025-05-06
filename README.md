@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# ✈️ Air Ticket Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple **Air Ticket Booking System** built with **React** and **Redux**, using `json-server` as a mock backend for development and testing purposes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📦 API Endpoints Reference
 
-### `npm start`
+### 👤 Users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| ID  | Username | Password | Email                | Cards (example)                 |
+| --- | -------- | -------- | -------------------- | ------------------------------- |
+| 101 | john_123 | john123  | john.doe@example.com | 4111 1111 1111 1111, 12/25, 123 |
+| 102 | jane_123 | jane123  | jane.doe@example.com | 5500 0000 0000 0004, 08/23, 456 |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Endpoint: `/users`
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✈️ Flights
 
-### `npm run build`
+| ID  | Flight No | Departure | Arrival    | Date       | Departure Time | Arrival Time | Price | Duration | Aircraft    | Available Seats | Gate | Terminal | Amenities                                 |
+| --- | --------- | --------- | ---------- | ---------- | -------------- | ------------ | ----- | -------- | ----------- | --------------- | ---- | -------- | ----------------------------------------- |
+| 1   | IND123    | india     | chandigarh | 02-01-2025 | 10:00 AM       | 1:45 PM      | 300   | 3h 45m   | Boeing 777  | 15              | A10  | T1       | Free WiFi, In-Flight Meals, Power Outlets |
+| 2   | IND123    | india     | chandigarh | 02-01-2025 | 2:00 PM        | 5:00 PM      | 400   | 3h 45m   | Airbus A320 | 5               | B5   | T3       | Free Snacks, Power Outlets                |
+| 3   | IND124    | india     | chandigarh | 12-01-2025 | 11:00 AM       | 2:30 PM      | 250   | 3h 30m   | Airbus A320 | 20              | B5   | T1       | Free Snacks, Power Outlets                |
+| 4   | PUN628    | pune      | jaipur     | 25-07-2025 | 1:00 PM        | 12:00 AM     | 468   | 5h 31m   | Airbus A320 | 33              | D4   | T3       | Free WiFi, In-Flight Meals                |
+| 5   | DEL146    | delhi     | mumbai     | 29-07-2025 | 5:00 AM        | 5:00 AM      | 478   | 4h 20m   | Embraer 190 | 33              | B2   | T1       | Free Snacks, Power Outlets                |
+| 6   | CHE632    | chennai   | kolkata    | 17-06-2025 | 3:30 PM        | 1:30 AM      | 200   | 2h 52m   | Boeing 737  | 23              | A5   | T2       | Power Outlets                             |
+| 7   | PUN960    | pune      | jaipur     | 22-07-2025 | 9:30 AM        | 5:00 PM      | 357   | 2h 24m   | Boeing 777  | 43              | C3   | T2       | Power Outlets                             |
+| 8   | CHE814    | chennai   | kolkata    | 13-07-2025 | 10:00 PM       | 10:30 AM     | 529   | 1h 51m   | Airbus A320 | 10              | A5   | T2       | Free Snacks, Power Outlets                |
+| 9   | DEL447    | delhi     | mumbai     | 24-05-2025 | 6:00 AM        | 3:30 PM      | 529   | 3h 07m   | Boeing 737  | 46              | C3   | T3       | Free Snacks, Power Outlets                |
+| 10  | DEL941    | delhi     | mumbai     | 23-07-2025 | 9:00 AM        | 7:00 AM      | 232   | 4h 29m   | Airbus A320 | 19              | D4   | T3       | Free WiFi, In-Flight Meals                |
+| 11  | DEL764    | delhi     | mumbai     | 03-07-2025 | 6:30 AM        | 2:00 PM      | 497   | 1h 31m   | Embraer 190 | 18              | A5   | T1       | Free Snacks, Power Outlets                |
+| 12  | CHE507    | chennai   | kolkata    | 18-06-2025 | 12:30 PM       | 7:00 AM      | 278   | 1h 12m   | Airbus A320 | 19              | B2   | T1       | Free Snacks, Power Outlets                |
+| 13  | CHE973    | chennai   | kolkata    | 08-07-2025 | 1:30 PM        | 3:30 AM      | 387   | 2h 01m   | Boeing 737  | 40              | A1   | T3       | Free WiFi, In-Flight Meals                |
+|  |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Endpoint: `/flights`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧾 Bookings
 
-### `npm run eject`
+Currently empty.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Endpoint: `/bookings`
