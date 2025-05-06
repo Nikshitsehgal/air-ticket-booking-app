@@ -1,0 +1,123 @@
+/* BookingList.css */
+.booking-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .booking-list-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .booking-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Ensure space between cards */
+    gap: 20px; /* Add space between cards */
+  }
+  
+  .booking-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: calc(50% - 10px);  /* 50% of the width minus the gap */
+    width: calc(50% - 10px); /* Ensure cards take 50% width minus gap */
+    box-sizing: border-box;
+  }
+  
+  .booking-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .booking-item p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .booking-item .reference-number {
+    font-weight: bold;
+    color: #3e8e41;
+  }
+  
+  .booking-item button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-item button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .no-bookings {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e53935;
+  }
+  
+  .booking-list-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .booking-list-container li {
+    margin-bottom: 20px;
+  }
+  
+  .booking-list-container li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* When the screen size is greater than or equal to 768px (tablet, laptop, and desktop) */
+  @media (min-width: 768px) {
+    .booking-item {
+      max-width: calc(50% - 20px);  /* Cards will take 50% of the container width */
+      width: calc(50% - 20px); /* Ensure cards take 50% width */
+    }
+  }
+  
+  /* When the screen size is less than 768px (smaller tablets and mobile devices) */
+  @media (max-width: 768px) {
+    .booking-items {
+      justify-content: center;  /* Center the cards */
+    }
+  
+    .booking-item {
+      max-width: 100%;  /* Allow the cards to take full width */
+      width: 100%;      /* Ensure cards take the full width */
+      margin: 10px 0;   /* Add vertical space between cards */
+    }
+  }
+  
+  /* When the screen size is less than or equal to 480px (very small mobile devices) */
+  @media (max-width: 480px) {
+    .booking-item {
+      max-width: 100%;  /* Cards will take the full width on very small screens */
+    }
+  }
+  

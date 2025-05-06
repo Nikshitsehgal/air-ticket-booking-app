@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": "101",
+      "username": "veer_123",
+      "password": "veer123",
+      "email": "john.doe@example.com",
+      "cards": [
+        {
+          "cardNumber": "4111111111111111",
+          "expiryDate": "12/25",
+          "cvv": "123"
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "username": "jatin_123",
+      "password": "jatin123",
+      "email": "jane.doe@example.com",
+      "cards": [
+        {
+          "cardNumber": "5500000000000004",
+          "expiryDate": "08/23",
+          "cvv": "456"
+        }
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "id": "1",
+      "departure": "india",
+      "arrival": "chandigarh",
+      "date": "02-01-2025",
+      "price": 300,
+      "duration": "3h 45m",
+      "flightNumber": "IND123",
+      "departureTime": "10:00 AM",
+      "aircraft": "Boeing 777",
+      "amenities": [
+        "Free WiFi",
+        "In-Flight Meals",
+        "Power Outlets"
+      ],
+      "gate": "A10",
+      "terminal": "T1",
+      "arrivalTime": "1:45 PM",
+      "availableseats": 15
+    },
+    {
+      "id": "2",
+      "departure": "india",
+      "arrival": "chandigarh",
+      "date": "02-01-2025",
+      "price": 400,
+      "duration": "3h 45m",
+      "flightNumber": "IND123",
+      "departureTime": "2:00 PM",
+      "aircraft": "Airbus A320",
+      "amenities": [
+        "Free Snacks",
+        "Power Outlets"
+      ],
+      "gate": "B5",
+      "terminal": "T3",
+      "arrivalTime": "5:00 PM",
+      "availableseats": 5
+    },
+    {
+      "id": "3",
+      "departure": "india",
+      "arrival": "chandigarh",
+      "date": "12-01-2025",
+      "price": 250,
+      "duration": "3h 30m",
+      "flightNumber": "IND124",
+      "departureTime": "11:00 AM",
+      "aircraft": "Airbus A320",
+      "amenities": [
+        "Free Snacks",
+        "Power Outlets"
+      ],
+      "gate": "B5",
+      "terminal": "T1",
+      "arrivalTime": "2:30 PM",
+      "availableseats": 20
+    }
+  ],
+  "bookings": []
+}

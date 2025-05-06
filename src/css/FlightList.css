@@ -1,0 +1,33 @@
+.flight-list-container {
+    padding: 20px;
+  }
+  
+  .flight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 55px;
+  }
+  
+  .flight-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flight-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .flight-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  

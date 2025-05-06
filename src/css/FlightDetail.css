@@ -1,0 +1,112 @@
+/* Global Styles for Flight Details */
+.flight-details-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #f0f4f8;
+  }
+  
+  .flight-card {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .flight-header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid #2c3e50;
+    text-align: center;
+  }
+  
+  .flight-header h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .flight-header .flight-date {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .flight-details {
+    padding: 20px;
+  }
+  
+  .flight-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .flight-duration, .flight-price {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flight-duration i, .flight-price i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .flight-info .flight-duration p, .flight-info .flight-price p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .flight-amenities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .flight-amenities ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .flight-info-extra p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .booking-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .book-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+  }
+  
+  .book-btn:hover {
+    background-color: #218838;
+  }
+  
+  .book-btn:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Loading and Error States */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 40px;
+  }
+  
